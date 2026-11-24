@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "license": "MIT",
   "private": false,
-  "description": "Open, bring-your-own-key edition of Arche Vision. A recording or a camera becomes a lab log.",
+  "description": "Camera-based lab assistant. It watches a real experiment, writes down what it sees, and helps while you work.",
   "repository": {
     "type": "git",
     "url": "https://github.com/avwtr/arche-vision.git"

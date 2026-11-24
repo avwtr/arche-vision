@@ -1,27 +1,29 @@
 <p align="center">
-  <img src="media/logo.png" alt="Arche" width="420">
+  <img src="media/logo.png" alt="Arche" width="240">
 </p>
 
-# Arche Vision, open edition
+# Arche Vision
 
-Arche Vision writes a lab log from a recording or a camera. This is the open edition: you run it yourself, and you bring your own [Venice](https://venice.ai) key. There is no Arche account, no database, and no telemetry.
+Arche Vision is a camera-based system for the bench. It watches a real experiment while you do it, writes down what it sees, and helps in the moment. The aim is an assistant that can sit in the lab, and a clearer record of work that is too messy for a protocol to capture on its own.
+
+You tell it what the experiment is and what you are doing. Up to four cameras can watch the bench at once, or you can hand it a recording. On one frame you mark the objects in view, so it can tell the scale, the vial, and the microscope apart. After that it runs in the background: about one look a second, a timestamped log as the procedure moves, and answers drawn from what it has already seen.
+
+It uses private AI. Pictures go to a private vision model, chiefly Qwen3 VL, and only while Venice still marks that model private.
+
+This repository is the open edition. You run it on your own machine and bring a [Venice](https://venice.ai) key. The same system is part of [Arche](https://www.archescience.ai), the live product, where Vision sits inside the rest of the lab tools.
 
 <p align="center">
-  <img src="media/live.png" alt="A live run: the bench camera, the log, and a private chat" width="640">
+  <img src="media/live.png" alt="A live run: the bench, the log, and a private chat" width="220">
 </p>
-
-The same demos as on the [Arche](https://www.archescience.ai) landing page. A run is watched through the cameras, written into a log, and you can ask about it while it is happening. A batch of runs gets a summary.
 
 <p align="center">
-  <img src="media/capture.png" alt="Four camera streams on one run" width="640"><br>
-  <img src="media/document.png" alt="The log written against the protocol" width="640"><br>
-  <img src="media/ask.png" alt="Asking the private model during a run" width="640"><br>
-  <img src="media/review.png" alt="A batch summary across four runs" width="640">
+  <img src="media/capture.png" alt="Four cameras on one run" width="150">
+  <img src="media/document.png" alt="The log beside the protocol" width="150">
+  <img src="media/ask.png" alt="Asking during a run" width="150">
+  <img src="media/review.png" alt="A summary across runs" width="150">
 </p>
 
-The footage in those demos is in this repository: [bench](media/bench.mp4) and [overhead](media/overhead.mp4).
-
-The Arche lab network — membership, experiments, papers — is a separate product. This repository is the part that can stand alone. It uses the same private-model check, the same object pass, and the same 20-second lab-log windows as Arche Vision.
+The clips in those pictures: [bench](media/bench.mp4), [overhead](media/overhead.mp4).
 
 ## What a run does
 
@@ -88,18 +90,6 @@ The page offers only the vision models this edition knows, and only when Venice 
 - `qwen3-vl-235b-a22b`
 - `google-gemma-4-31b-it`
 
-## Relationship to Arche
-
-This repository is only the open edition. It does not import the Arche lab network. That product stays in [ARCHE](https://github.com/avwtr/ARCHE).
-
 ## License
 
 MIT. Copyright Heterodox Labs, Inc. See `LICENSE`.
-
-## Citing
-
-If you use this in a paper or a proposal, cite the software and the version you ran:
-
-> Heterodox Labs. *Arche Vision* (open edition). https://github.com/avwtr/arche-vision
-
-Say which model the run used. The log is model output reviewed by the researcher who exported it.
