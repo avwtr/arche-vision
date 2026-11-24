@@ -1,8 +1,27 @@
+<p align="center">
+  <img src="media/logo.png" alt="Arche" width="420">
+</p>
+
 # Arche Vision, open edition
 
 Arche Vision writes a lab log from a recording or a camera. This is the open edition: you run it yourself, and you bring your own [Venice](https://venice.ai) key. There is no Arche account, no database, and no telemetry.
 
-The Arche lab network — membership, experiments, papers — is a separate product. This folder is the part that can stand alone. It uses the same private-model check, the same object pass, and the same 20-second lab-log windows as Arche Vision.
+<p align="center">
+  <img src="media/live.png" alt="A live run: the bench camera, the log, and a private chat" width="640">
+</p>
+
+The same demos as on the [Arche](https://www.archescience.ai) landing page. A run is watched through the cameras, written into a log, and you can ask about it while it is happening. A batch of runs gets a summary.
+
+<p align="center">
+  <img src="media/capture.png" alt="Four camera streams on one run" width="640"><br>
+  <img src="media/document.png" alt="The log written against the protocol" width="640"><br>
+  <img src="media/ask.png" alt="Asking the private model during a run" width="640"><br>
+  <img src="media/review.png" alt="A batch summary across four runs" width="640">
+</p>
+
+The footage in those demos is in this repository: [bench](media/bench.mp4) and [overhead](media/overhead.mp4).
+
+The Arche lab network — membership, experiments, papers — is a separate product. This repository is the part that can stand alone. It uses the same private-model check, the same object pass, and the same 20-second lab-log windows as Arche Vision.
 
 ## What a run does
 
