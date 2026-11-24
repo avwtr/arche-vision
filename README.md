@@ -4,11 +4,11 @@
 
 # Arche Vision
 
-Arche Vision is a camera-based system for the bench. It watches a real experiment while you do it, writes down what it sees, and helps in the moment. The aim is an assistant that can sit in the lab, and a clearer record of work that is too messy for a protocol to capture on its own.
+Arche Vision is a camera-based system for the bench. It watches a real world experimental process while you perform it, logs what it sees, and provides assistance. The aim is an assistant that can sit in the lab, and a clearer record of work that is too messy for a protocol to capture on its own.
 
-You tell it what the experiment is and what you are doing. Up to four cameras can watch the bench at once, or you can hand it a recording. On one frame you mark the objects in view, so it can tell the scale, the vial, and the microscope apart. After that it runs in the background: about one look a second, a timestamped log as the procedure moves, and answers drawn from what it has already seen.
+You provide context regarding what you plan on doing and what your experimental objective is. Up to four concurrent cameras can watch the bench at once, or you can upload a recording. Based on a single captured frame, AI will predict the visible objects with labels, you can accept, reject or introduce new objects for the system to calibrate around. After that, the system simply runs in the background: about one look a second, a timestamped log as the procedure moves, and chat-interaction drawn from what it has already seen.
 
-It uses private AI. Pictures go to a private vision model, chiefly Qwen3 VL, and only while Venice still marks that model private.
+It uses private AI. Feed flows to a private vision model, chiefly Qwen3 VL, and only while Venice still marks that model private. (venice.ai) 
 
 This repository is the open edition. You run it on your own machine and bring a [Venice](https://venice.ai) key. The same system is part of [Arche](https://www.archescience.ai), the live product, where Vision sits inside the rest of the lab tools.
 
@@ -27,8 +27,8 @@ The clips in those pictures: [bench](media/bench.mp4), [overhead](media/overhead
 
 ## What a run does
 
-1. You name the experiment and say what is happening.
-2. You choose a video file or a camera.
+1. You name the experiment and say what your objective is.
+2. You choose a video file or a camera(s)
 3. You pick a frame and identify the objects in it. You can rename them, remove them, or draw a box.
 4. Arche reads the picture one frame a second, in stretches of 20 seconds, and writes a log line when the step changes.
 5. You can pause, resume, or stop. Stopping writes the summary from the log so far.
