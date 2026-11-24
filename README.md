@@ -4,7 +4,7 @@
 
 # Arche Vision
 
-Arche Vision is a camera-based system for the bench. It watches a real world experimental process while you perform it, logs what it sees, and provides assistance. The aim is an assistant that can sit in the lab, and a clearer record of work that is too messy for a protocol to capture on its own.
+Arche Vision is a camera-based system for the bench. It watches a real world experimental process while you perform it, logs what it sees, and provides assistance. The aim is an assistant that can sit in the lab, and generate a clear record of work that is too messy for a protocol to capture on its own.
 
 You provide context regarding what you plan on doing and what your experimental objective is. Up to four concurrent cameras can watch the bench at once, or you can upload a recording. Based on a single captured frame, AI will predict the visible objects with labels, you can accept, reject or introduce new objects for the system to calibrate around. After that, the system simply runs in the background: about one look a second, a timestamped log as the procedure moves, and chat-interaction drawn from what it has already seen.
 
