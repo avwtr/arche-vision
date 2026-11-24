@@ -1,0 +1,30 @@
+{
+  "name": "arche-vision",
+  "version": "0.1.0",
+  "license": "MIT",
+  "private": false,
+  "description": "Open, bring-your-own-key edition of Arche Vision. A recording or a camera becomes a lab log.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/avwtr/arche-vision.git"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "^16.4.6",
+    "react": "^19",
+    "react-dom": "^19"
+  },
+  "devDependencies": {
+    "@types/node": "^24",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "typescript": "5.7.3"
+  }
+}
