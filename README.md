@@ -23,16 +23,15 @@ This repository is the open edition. You run it on your own machine and bring a 
   <img src="media/review.png" alt="A summary across runs" width="150">
 </p>
 
-The clips in those pictures: [bench](media/bench.mp4), [overhead](media/overhead.mp4).
 
-## What a run does
+## What happens in an Arche Vision run 
 
 1. You name the experiment and say what your objective is.
-2. You choose a video file or a camera(s)
-3. You pick a frame and identify the objects in it. You can rename them, remove them, or draw a box.
-4. Arche reads the picture one frame a second, in stretches of 20 seconds, and writes a log line when the step changes.
-5. You can pause, resume, or stop. Stopping writes the summary from the log so far.
-6. The summary is yours to edit. The run stays in this browser. Download it as a note or as JSON when you want a copy.
+2. You upload a video file or select camera(s) attached to your computer
+3. Snapshot a single video frame and AI will identify the objects in it. You can rename them, remove them, or manually introduce new objects.
+4. Once launched into the workflow, Arche reads the real-time camera feed ~one frame/second, in stretches of 20 seconds, and writes out a human readable, sentence log when the step changes.
+5. You can pause, resume, or stop at any point. A summary is generated upon conclusion.
+6. The summary is yours to edit. The run footage and associated data is stored in your browser. 
 
 The video file never leaves the browser. The browser samples frames and sends those frames, your context, and the object names to the server you are running. That server sends them to Venice with your key, and only after Venice’s own model list says the model is private. A model Venice no longer marks private is refused, and nothing is sent.
 
