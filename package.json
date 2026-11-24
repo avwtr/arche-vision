@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "license": "MIT",
   "private": false,
-  "description": "Camera-based lab assistant. It watches a real experiment, writes down what it sees, and helps while you work.",
+  "description": "Private, camera-based AI infrastructure for observing, documenting, and assisting with real-world experimental processes.",
   "repository": {
     "type": "git",
     "url": "https://github.com/avwtr/arche-vision.git"
